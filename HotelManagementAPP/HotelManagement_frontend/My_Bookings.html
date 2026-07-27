@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Bookings</title>
+    <link rel="stylesheet" href="Style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body class="bookings-body">
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <h2 class="logo">HotelBooking</h2>
+
+        <div class="nav-links">
+            <a href="Rooms.html">Rooms</a>
+            <a href="Booking.html">Book Room</a>
+            <a href="Login.html" class="logout">Logout</a>
+        </div>
+    </nav>
+
+    <h1 class="heading">My Bookings </h1>
+    <div class="filter-box">
+    <input type="date">
+    <input type="date">
+    <button>Filter</button>
+    </div>
+    <!-- Table -->
+    <div class="table-container">
+        <table>
+            <tr>
+                <th>Room</th>
+                <th>Check-in</th>
+                <th>Check-out</th>
+                <th>Status</th>
+                <th>Action</th>
+            </tr>
+
+            <tr>
+                <td>Deluxe</td>
+                <td>1 April</td>
+                <td>3 April</td>
+                <td class="status confirmed">Confirmed</td>
+                <td><button class="cancel-btn">Cancel</button></td>
+            </tr>
+
+            <tr>
+                <td>Single</td>
+                <td>5 April</td>
+                <td>6 April</td>
+                <td class="status pending">Pending</td>
+                <td><button class="cancel-btn">Cancel</button></td>
+            </tr>
+        </table>
+    </div>
+    <div class="pagination">
+    <button>Prev</button>
+    <span>Page 1</span>
+    <button>Next</button>
+</div>
+<script src="./Script.js"></script>
+</body>
+</html>

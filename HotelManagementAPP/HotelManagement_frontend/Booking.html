@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Book Room</title>
+    <link rel="stylesheet" href="Style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body class="booking-body">
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <h2 class="logo">HotelBooking</h2>
+
+        <div class="nav-links">
+            <a href="Rooms.html">Rooms</a>
+            <a href="My_Bookings.html">My Bookings</a>
+            <a href="Login.html" class="logout">Logout</a>
+        </div>
+    </nav>
+
+    <!-- Booking Form -->
+    <div class="booking-container">
+
+        <h2>Book Your Room </h2>
+
+        <form>
+            <input type="text" placeholder="Full Name" required>
+            <input type="email" placeholder="Email" required>
+
+            <label>Check-in Date</label>
+            <input type="date" required>
+
+            <label>Check-out Date</label>
+            <input type="date" required>
+
+            <button type="submit">Confirm Booking</button>
+        </form>
+
+    </div>
+
+    <script src="Script.js"></script>
+</body>
+</html>

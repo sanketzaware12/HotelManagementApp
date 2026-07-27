@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="Style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body class="dashboard-body">
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h2>Hotel</h2>
+
+        <a href="Dashboard.html">Dashboard</a>
+        <a href="Rooms.html">Rooms</a>
+        <a href="Booking.html">Book Room</a>
+        <a href="My_Bookings.html">My Bookings</a><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <a href="Login.html" class="logout">Logout</a>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+
+        <h1 style="text-align: center;">Welcome </h1>
+
+        
+        <!-- Cards -->
+        <div class="cards">
+
+            <div class="card">
+                <h3>Total Bookings</h3>
+                <p>12</p>
+            </div>
+
+            <div class="card">
+                <h3>Available Rooms</h3>
+                <p>8</p>
+            </div>
+
+            <div class="card">
+                <h3>Pending</h3>
+                <p>3</p>
+            </div>
+
+        </div>
+
+        <!-- Quick Actions -->
+        <div class="actions">
+
+            <button onclick="goRooms()">View Rooms</button>
+            <button onclick="goBooking()">Book Now</button>
+            <button onclick="goMyBookings()">My Bookings</button>
+
+        </div>
+
+    </div>
+
+<script>
+function goRooms(){
+    window.location.href = "Rooms.html";
+}
+
+function goBooking(){
+    window.location.href = "Booking.html";
+}
+
+function goMyBookings(){
+    window.location.href = "My_Bookings.html";
+}
+</script>
+
+</body>
+</html>
